@@ -1,7 +1,7 @@
 # activestorage-audio
 
-Includes an audio analyzer which will automatically analyze audio files
-using [FFmpeg][]
+An audio analyzer for [ActiveStorage](https://guides.rubyonrails.org/active_storage_overview.html)
+which will automatically analyze audio files using [FFmpeg](https://www.ffmpeg.org/).
 
 ## Installation
 
