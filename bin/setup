@@ -3,6 +3,21 @@ set -euo pipefail
 IFS=$'\n\t'
 set -vx
 
-bundle install
+# Install FFmpeg
+case "$(uname -s)" in
+  Darwin)
+    brew install ffmpeg
+    ;;
+  Linux)
+    debian="$(grep -qEi 'debian|buntu|mint' /etc/*release)"
+    if [ -n "$debian" ]; then
+      apt-get install -yy ffmpeg
+    fi
+    ;;
+  *)
+    echo "Please install \`ffmpeg\` from source"
+    ;;
+esac
 
-# Do any other automated setup that you need to do here
+# Install the bundle
+bundle install

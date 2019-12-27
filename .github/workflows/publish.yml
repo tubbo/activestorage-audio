@@ -1,4 +1,4 @@
-name: Publish
+name: Publish to RubyGems
 on: [release]
 jobs:
   build:
@@ -8,12 +8,12 @@ jobs:
       - name: Install Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby_version: ${{ matrix.ruby_version }}
+          ruby_version: 2.7
       - name: Install FFmpeg
         use: mstksg/get-package@v1
         with:
           apt-get: ffmpeg
       - name: Bundle Dependencies
         run: bundle install
-      - name: Build Gem
-        run: bundle exec rake build
+      - name: Release Gem
+        run: bundle exec rake release
