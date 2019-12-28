@@ -3,6 +3,7 @@
 require 'active_storage'
 require 'active_storage/audio/version'
 require 'active_storage/audio/analyzer'
+require 'active_storage/audio/engine' if defined? Rails
 
 module ActiveStorage
   module Audio
