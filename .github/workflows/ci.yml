@@ -14,7 +14,7 @@ jobs:
         with:
           ruby_version: ${{ matrix.ruby_version }}
       - name: Install FFmpeg
-        use: mstksg/get-package@v1
+        uses: mstksg/get-package@v1
         with:
           apt-get: ffmpeg
       - name: Bundle Dependencies
