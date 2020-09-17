@@ -8,7 +8,7 @@ which will automatically analyze audio files using [FFmpeg](https://www.ffmpeg.o
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'active_storage-audio'
+gem 'activestorage-audio'
 ```
 
 Then, run:
