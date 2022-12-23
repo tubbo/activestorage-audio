@@ -61,7 +61,7 @@ computed using `ffprobe`, found using the current `$PATH`. If you wish
 to set a custom path to ffprobe, do this in an initializer:
 
 ```ruby
-ActiveSupport.paths[:ffprobe] = '/opt/local/bin/ffprobe'
+ActiveStorage.paths[:ffprobe] = '/opt/local/bin/ffprobe'
 ```
 
 ## Development
