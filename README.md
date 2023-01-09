@@ -61,7 +61,7 @@ computed using `ffprobe`, found using the current `$PATH`. If you wish
 to set a custom path to ffprobe, do this in an initializer:
 
 ```ruby
-ActiveSupport.paths[:ffprobe] = '/opt/local/bin/ffprobe'
+ActiveStorage.paths[:ffprobe] = '/opt/local/bin/ffprobe'
 ```
 
 ## Development
@@ -79,10 +79,10 @@ a git tag for the version, push git commits and tags, and push the
 ## Contributing
 
 vBug reports and pull requests are welcome on GitHub at
-https://github.com/tubbo/active_storage-audio. This project is intended
+https://github.com/tubbo/activestorage-audio. This project is intended
 to be a safe, welcoming space for collaboration, and contributors are
 expected to adhere to the [code of
-conduct](https://github.com/tubbo/active_storage-audio/blob/master/CODE_OF_CONDUCT.md).
+conduct](https://github.com/tubbo/activestorage-audio/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -94,4 +94,4 @@ License](https://opensource.org/licenses/MIT).
 Everyone interacting in the ActiveStorage::Audio project's codebases,
 issue trackers, chat rooms and mailing lists is expected to follow the
 [code of
-conduct](https://github.com/tubbo/active_storage-audio/blob/master/CODE_OF_CONDUCT.md).
+conduct](https://github.com/tubbo/activestorage-audio/blob/master/CODE_OF_CONDUCT.md).
